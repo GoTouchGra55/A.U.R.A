@@ -2,7 +2,7 @@
 <project>
   <fileVersion>3</fileVersion>
   <configuration>
-    <name>AURA</name>
+    <name>GRAVITAS</name>
     <toolchain>
       <name>ARM</name>
     </toolchain>
@@ -16,15 +16,15 @@
         <debug>1</debug>
         <option>
           <name>ExePath</name>
-          <state>AURA/Exe</state>
+          <state>GRAVITAS/Exe</state>
         </option>
         <option>
           <name>ObjPath</name>
-          <state>AURA/Obj</state>
+          <state>GRAVITAS/Obj</state>
         </option>
         <option>
           <name>ListPath</name>
-          <state>AURA/List</state>
+          <state>GRAVITAS/List</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -660,7 +660,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>AURA.hex</state>
+          <state>GRAVITAS.hex</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -703,7 +703,7 @@
         <debug>1</debug>
         <option>
           <name>IlinkOutputFile</name>
-          <state>AURA.out</state>
+          <state>GRAVITAS.out</state>
         </option>
         <option>
           <name>IlinkLibIOConfig</name>

@@ -572,7 +572,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, BMP_CS_Pin|SX_CS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, BMP_CS_Pin|PYRO_CH1_Pin|PYRO_CH2_Pin|PYRO_CH3_Pin
+                          |PYRO_CH4_Pin|SX_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_RESET);
@@ -580,24 +581,20 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(SX_NRST_GPIO_Port, SX_NRST_Pin, GPIO_PIN_SET);
 
-  /*Configure GPIO pins : BMP_CS_Pin SX_CS_Pin */
-  GPIO_InitStruct.Pin = BMP_CS_Pin|SX_CS_Pin;
+  /*Configure GPIO pins : BMP_CS_Pin PYRO_CH1_Pin PYRO_CH2_Pin PYRO_CH3_Pin
+                           PYRO_CH4_Pin SX_CS_Pin */
+  GPIO_InitStruct.Pin = BMP_CS_Pin|PYRO_CH1_Pin|PYRO_CH2_Pin|PYRO_CH3_Pin
+                          |PYRO_CH4_Pin|SX_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : BMP_INT_Pin */
-  GPIO_InitStruct.Pin = BMP_INT_Pin;
+  /*Configure GPIO pins : BMP_INT_Pin IMU_INT1_Pin IMU_INT2_Pin */
+  GPIO_InitStruct.Pin = BMP_INT_Pin|IMU_INT1_Pin|IMU_INT2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(BMP_INT_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : IMU_INT1_Pin */
-  GPIO_InitStruct.Pin = IMU_INT1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(IMU_INT1_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pin : IMU_CS_Pin */
   GPIO_InitStruct.Pin = IMU_CS_Pin;
@@ -613,11 +610,11 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(SX_NRST_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : SD_CD_Pin */
-  GPIO_InitStruct.Pin = SD_CD_Pin;
+  /*Configure GPIO pins : SX_BUSY_Pin SD_CD_Pin */
+  GPIO_InitStruct.Pin = SX_BUSY_Pin|SD_CD_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(SD_CD_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
