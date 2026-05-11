@@ -1,0 +1,266 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "8cafb8b9-d08f-46ec-b15c-c94bddd4adb4")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 105.41 34.29)
+		(size 60.96 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0f98360a-ac8a-4680-87fc-645201f2aae9")
+		(property "Sheetname" "IMU"
+			(at 105.41 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMU.kicad_sch"
+			(at 105.41 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GRAVITAS"
+				(path "/8cafb8b9-d08f-46ec-b15c-c94bddd4adb4"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 105.41 101.6)
+		(size 60.96 48.26)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1324a834-9180-467e-912f-3f2d18a897ed")
+		(property "Sheetname" "Telemetry"
+			(at 105.41 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Telemetry.kicad_sch"
+			(at 105.41 150.4446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GRAVITAS"
+				(path "/8cafb8b9-d08f-46ec-b15c-c94bddd4adb4"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 173.99 101.6)
+		(size 63.5 48.26)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "51f7d4da-83d6-4ba8-876a-3d02f6bad8fe")
+		(property "Sheetname" "Memory"
+			(at 173.99 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Memory.kicad_sch"
+			(at 173.99 150.4446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GRAVITAS"
+				(path "/8cafb8b9-d08f-46ec-b15c-c94bddd4adb4"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 101.6)
+		(size 63.5 48.26)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "72e97762-1c6b-4c5c-badc-75f21d0afdc7")
+		(property "Sheetname" "POWER"
+			(at 33.02 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 33.02 150.4446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GRAVITAS"
+				(path "/8cafb8b9-d08f-46ec-b15c-c94bddd4adb4"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 34.29)
+		(size 63.5 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "899362bf-c373-431c-80bf-2d6dad19e872")
+		(property "Sheetname" "MCU"
+			(at 33.02 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Main.kicad_sch"
+			(at 33.02 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GRAVITAS"
+				(path "/8cafb8b9-d08f-46ec-b15c-c94bddd4adb4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 173.99 34.29)
+		(size 63.5 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8b2de073-69e2-40e3-ab2d-a5027661e4a3")
+		(property "Sheetname" "Barometer + Pyro"
+			(at 173.99 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Barometer_Pyro.kicad_sch"
+			(at 173.99 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GRAVITAS"
+				(path "/8cafb8b9-d08f-46ec-b15c-c94bddd4adb4"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
